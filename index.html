@@ -8,6 +8,7 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="./styles/main.css">
+        <!-- <script type="module" src="./js/main.js"></script> -->
         <!-- bootstrap -->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -17,7 +18,7 @@
     <body>
         <!-- navbar -->
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href="./index.html">
                 <img src="/images/AF_Logo.png" width="30" height="35" alt="artfight logo">
                 Artfight Help</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -25,7 +26,7 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
               <div class="navbar-nav">
-                <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link active" href="./index.html">Home <span class="sr-only">(current)</span></a>
                 <a class="nav-item nav-link" href="https://artfight.net/">Website</a>
               </div>
             </div>
@@ -35,73 +36,77 @@
         <div class="jumbotron jumbotron-fluid">
           <div class="top">
               <div class="top-text">
-                <img src="./images/AF_Logo.png" height="150">
+                <img src="./images/AF_Logo.png" alt="Art Fight Logo" height="150">
                   <h1>Welcome to Artfight Help</h1>
-                  <p id="subtitle">Search</p>
+                  <p id="subtitle">Search (doesn't work yet)</p>
               </div>
               
               <div class="search">
-                  <input type="text" placeholder="Search..">
+                  <input type="text" placeholder="Search...">
                   <input class="btn btn-primary btn-sm" type="submit" value="Submit">
               </div>  
           </div>
         </div>
 
-        <div id="sectionHeader">
-            <h2>Resources</h2>
-            <hr>
+        <div id="contentWrapper">
+            <div id="sectionHeader">
+                <h2>Resources</h2>
+                <hr>
+            </div>
+            
+
+            <div id="displayInfo">
+                <!-- getting started -->
+                 
+                <div class="infoBox">
+                    <div class="infoBoxImg">
+                        <img src="./images/logo.png" width="100" height="100" alt="artfight logo">
+                    </div>
+                    <div class="infoBoxText">
+                        <a href="./gettingStarted.html" class="fill-div"><h3>Getting Started</h3></a>
+                        <p>Here's where you can learn all the Art Fight basics!</p>
+                    </div>
+                </div>
+    
+                <!-- FAQ -->
+                <div class="infoBox">
+                    <div class="infoBoxImg">
+                        <img src="./images/logo.png" width="100" height="100" alt="artfight logo">
+                    </div>
+                    <div class="infoBoxText">
+                        <a href="./faq.html" class="fill-div"><h3>FAQ</h3></a>
+                        <p>Answers to common questions by our users.</p>
+                    </div>
+                </div>
+    
+    
+                <!-- Profile Decoration -->
+                <div class="infoBox">
+                    <div class="infoBoxImg">
+                        <img src="./images/logo.png" width="100" height="100" alt="artfight logo">
+                    </div>
+                    <div class="infoBoxText">
+                        <a href="./profileDecorations.html" class="fill-div"><h3>Profile Decoration</h3></a>
+                        <p>Team assets, CSS Guide, BBCode Guide and more!</p>
+                    </div>
+                </div>
+    
+                <!-- Contribute -->
+                <div class="infoBox">
+                    <div class="infoBoxImg">
+                        <img src="./images/contributions_logo.png" width="100" height="100" alt="artfight logo">
+                    </div>
+                    <div class="infoBoxText">
+                        <a href="https://artfight.net/donate" class="fill-div"><h3>Contribute</h3></a>
+                        <p>Information regarding contributing to Artfight.</p>
+                    </div>
+                </div>
+            </div>
         </div>
         
-        <div id="displayInfo">
-            <!-- getting started -->
-             
-            <div class="infoBox">
-                <div class="infoBoxImg">
-                    <img src="./images/logo.png" width="100" height="100" alt="artfight logo">
-                </div>
-                <div class="infoBoxText">
-                    <a href="./gettingStarted.html" class="fill-div"><h3>Getting Started</h3></a>
-                    <p>Here's where you can learn all the Art Fight basics!</p>
-                </div>
-            </div>
-
-            <!-- FAQ -->
-            <div class="infoBox">
-                <div class="infoBoxImg">
-                    <img src="./images/logo.png" width="100" height="100" alt="artfight logo">
-                </div>
-                <div class="infoBoxText">
-                    <a href="./faq.html" class="fill-div"><h3>FAQ</h3></a>
-                    <p>Answers to common questions by our users.</p>
-                </div>
-            </div>
-
-
-            <!-- Profile Decoration -->
-            <div class="infoBox">
-                <div class="infoBoxImg">
-                    <img src="./images/logo.png" width="100" height="100" alt="artfight logo">
-                </div>
-                <div class="infoBoxText">
-                    <a href="https://artfight.net/" class="fill-div"><h3>Profile Decoration</h3></a>
-                    <p>CSS guide, BBCode guide, team assets, and more!</p>
-                </div>
-            </div>
-
-            <!-- Contribute -->
-            <div class="infoBox">
-                <div class="infoBoxImg">
-                    <img src="./images/contributions_logo.png" width="100" height="100" alt="artfight logo">
-                </div>
-                <div class="infoBoxText">
-                    <a href="https://artfight.net/" class="fill-div"><h3>Contribute</h3></a>
-                    <p>Information regarding contributing to Artfight.</p>
-                </div>
-            </div>
-
-
-
         
-        <script src="" async defer></script>
+        
+        
+        
     </body>
 </html>

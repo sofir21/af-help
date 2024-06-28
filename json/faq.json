@@ -5,12 +5,22 @@
     {
         "title": "Event Questions",
         "questions": [
-            {"question" : "question 1", "answer": "<p>answer 1<p>"},
-            {"question" : "question 2", "answer": "<p>answer 2<p> <img src='https://file.garden/ZjiUSDZDmwekrzbA/TH-Icon.PNG'>"},
-            {"question" : "question 3", "answer": "<p> answer 3<br><br> answer 3 with a paragraph break!</p>"},
-            {"question" : "question 1", "answer": "<p>answer 1<p>"},
-            {"question" : "question 2", "answer": "<p>answer 2<p> <img src='https://file.garden/ZjiUSDZDmwekrzbA/TH-Icon.PNG'>"},
-            {"question" : "question 3", "answer": "<p> answer 3<br><br> answer 3 with a paragraph break!</p>"}
+            {"question" : "What is Art Fight?", "answer": "<p>Art fight is an annual art game that lasts for 1 month. Users can register on the site to join in. Each year, participants are split into two teams to which they are assigned randomly. <br> <a href='https://www.youtube.com/watch?v=OEZfwVArO9E'>Click to see the about video here!</a></p>"},
+            {"question" : "How do I sign up and join a team?", "answer": "<p>To sign up, go to <a href='http://artfight.net/register'>http://artfight.net/register</a><br><br>After making an Art Fight account, you can join the current event by clicking the 'Current Event' tab on the top right bar, by your username. Alternatively, here's a direct link: <a href='https://artfight.net/event/'>https://artfight.net/event/</a><br><br>From there you will be taken to a page where you will be randomly sorted onto one of the teams.<br><br>Once you've gotten a team, you can join it on the discord server as well. Head <a href='https://discord.com/channels/205192282259980288/1123405755677155392'>#af-roles</a> to assign the team role using either of the pinned commands.</p>"},
+
+            {"question" : "How do I switch teams?", "answer": "<p>To change teams, go to <a href='http://artfight.net/register'>http://artfight.net/register</a><br><br>If you ran out of chances and still got put on the same team, please contact anyone listed on<a href='http://artfight.net/info/contact'>http://artfight.net/info/contact</a>.<br><br>To change your role on Discord, contact a mod to switch you."},
+
+            {"question" : "How do I attack?", "answer": "<p> <br><br> To start attacking, find a character on the opposite of your team and start drawing! Once you're done, you can submit your attack here: <a href='http://artfight.net/submit/attack '>http://artfight.net/submit/attack </a> <br><br> <b>&#9888;Note: Starting attacks before the event begins can result in a ban. &#9888;</b><p>"},
+
+            {"question" : "How do I submit characters?", "answer": "You can submit characters here: <br><br><img src='https://rainy.s-ul.eu/GToCF5t6.png'><br><br>Alternatively, here's a direct link: <a href='https://artfight.net/submit/character'>https://artfight.net/submit/character</a>"},
+
+            {"question" : "How do I look for characters to attack?", "answer": "<p>If you're stuck on finding characters to attack, here's some helpful ways!</p> <ol><li>Using <a href='http://artfight.net/character/random'>http://artfight.net/character/random </a> to get random characters</li><li> Using <a href='https://artfight.net/browse/tags'>https://artfight.net/browse/tags</a> to search characters by tags</li><li>Asking in our discord channels <a href='https://discord.com/channels/205192282259980288/209507392377978880'>#⁠arts</a> or ⁠<a href='https://discord.com/channels/205192282259980288/325850941628874762'>characters</a> </li><li>Looking in the team page under 'recent characters'</li><li> Using <a href='http://artfight.net/browse/characters'>http://artfight.net/browse/characters</a> (If you are a donator of $5+, then you have search abilities!)</li></ol> "},
+
+            {"question" : "Can I start planning my attacks before the event begins?", "answer": "You're allowed to do thumbnails and planning, however you can't use them in the final attack, only reference them. All attacks need to get drawn from scratch starting on July 1st!<br><br><b>&#9888;Note: Starting attacks before the event begins can result in a ban. &#9888;</b>"},
+
+            {"question" : "How do I fill my team card?", "answer": "There is no specific way to fill out the team card. However, the general way to fill it out is to use an art program of your choice to add in an icon drawing and icons of the characters you'd like to showcase. Then mark what types of characters you have. Then you mark if you do revenge (attacks back) and friendly fire (attacks for people on the same team)!"}
+
+            
         ]
     },
         
@@ -18,9 +28,18 @@
         {
             "title": "Website Questions",
             "questions": [
-                {"question" : "question 1", "answer": "answer 1"},
-                {"question" : "question 2", "answer": "answer 2"},
-                {"question" : "question 3", "answer": "answer 3"}
+                {"question" : "How do I find who I'm following?", "answer": "To view followed users, go to Settings - > Followed users. Or click this: <a href='http://artfight.net/user/settings/following'>http://artfight.net/user/settings/following</a>"},
+                {"question" : "I have yet to receive my verification/password reset email.", "answer": "Are you using a iCloud email address or something else unknown or unpopular?  Sometimes the verification email doesn't want to send to certain email addresses, so you should use something like Gmail or Yahoo."},
+                {"question" : "Where do I donate?/How do I get CSS perks?", "answer": "You can donate & learn about the perks of donating here: <a href='https://artfight.net/donate'>https://artfight.net/donate</a>"},
+                {"question" : "How do I reply to a comment onsite?", "answer": "You can 'reply' to people on the site by mentioning their username in your comment! Like so: @userhere"},
+                {"question" : "How do I find characters/where is the search?", "answer": "The site used to have search available for all users, but we made the decision to change the search feature to $5 donators and up due to site strain. If you cannot donate, you can use the <a href='https://discord.com/channels/205192282259980288/595639072652001288'>⁠#target-hunting</a> or <a href='https://discord.com/channels/205192282259980288/325850941628874762'>⁠#⁠characters</a> channels in discord! You can also find characters via team pages!"},
+                {"question" : "I don't know the artist of my character or image.", "answer": "If you do not know the artist to your character or image, you can simply add a link that's something along the lines of:<br><br> http://unknownartist.com <br><br> and in the additional credits section, add that you do not know the artist/designer."},
+                {"question" : "How do I revenge?", "answer": "To revenge an attack, means to attack someone after they've attacked you. Art Fight has a revenge system implemented that will keep a 'chain'. There will be an option to start a revenge chain on the attack page!"},
+                {"question" : "How do I rate an attack?", "answer": "Unsure how to rate your attack? Check out our attack rating guide! <br><br> <a href='http://artfight.net/info/guide-attacks'>http://artfight.net/info/guide-attacks</a>"},
+                {"question" : "Does my image/character need a filter?", "answer": "All images that include the following content need a filter: gore, body horror, nudity, suggestive themes, eyestrain, and sensitive content. <br><br> Unsure if your character/image needs one of these filters? Check out our filtering guide! <br><br> <a href='https://artfight.net/info/guide-filters'>https://artfight.net/info/guide-filters</a>"},
+                {"question" : "Base Usage", "answer": "Self-made bases are allowed for your own character references, as well as f2u bases or ones you have permission to use as long as you give proper credits!<br><br><b>&#9888;Bases are not allowed for attacks. &#9888;</b> "}
+
+
             ]
         },
 
@@ -28,10 +47,20 @@
         {
             "title": "Discord Questions",
             "questions": [
-                {"question" : "question 1", "answer": "answer 1"},
-                {"question" : "question 2", "answer": "answer 2"},
-                {"question" : "question 3", "answer": "answer 3"}
+                {"question" : "I can't see/type in the channels!", "answer": "To get verified and be able to see all the channels, please react to the message in <a href='https://discord.com/channels/205192282259980288/479448758543712256'>#⁠info</a> and make a post in <a href='https://discord.com/channels/205192282259980288/411935981923598337'>#introductions</a>. If you're having trouble completing the captcha, please ask for assistance in <a href='https://discord.com/channels/205192282259980288/206745950742511616'>#af-help!</a>"},
+                {"question" : "Donator Role", "answer": " Please DM a moderator a screenshot of your <a href='https://artfight.net/user/settings/donations'>on-site contribution history</a> so they can grant you the roles!"}
+            ]
+        },
+
+        "section4":
+        {
+            "title": "Common Errors",
+            "questions": [
+                {"question" : "My profile picture/attack resulted in an error.", "answer": "User profile pictures must be 100x100px and thumbnails for your characters/attacks must be 200x200px. Images have to be under 5MB when uploaded. You can resize your images and/or compress their file sizes at ⁠<a href='http://resizeimage.net/'>http://resizeimage.net/</a>"},
+                {"question" : "My profile picture/thumbnail didn't change when I edited it.", "answer": "Sometimes the cache is stubborn and won't update images for people properly, but works for other people. If other people see the updated image and you see the old image, please give it up to 24 hours to fix. <br><br> Try clearing your cache via your browser settings, or do a hard refresh by pressing CTRL+F5 (windows) or ⌘+Shift+R (mac). Otherwise, please give it a couple hours to update on your end!"},
+                {"question" : "Image on my profile is broken!", "answer": "If you're having issues inserting images onto your profile, please try and use the button to insert the image!Click on the little picture icon above the text box and paste the image link on the drop down. Make sure it ends on .png / .gif / .jpg, and that you're using an image hosting website like imgur so the images don't break! (Discord image links *will* break)"}
             ]
         }
+
 
 }

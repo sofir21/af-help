@@ -35,6 +35,7 @@
 {
     flex: 1 1 0;
     min-width: 300px;
+    max-width: 300px;
     text-align: center;
     margin: 10px;
     max-width: 40%;
@@ -52,13 +53,6 @@ a.fill-div {
 }
 
 
-
-#accordion
-{
-    
-    
-}
-
 .questions{
     
     
@@ -69,17 +63,16 @@ a.fill-div {
 }
 
 
-.faq-questions
-{
-    
+/* .faq-questions
+{ 
     margin:10px;
-}
+} */
 
-.displayQuestions
+/* .displayQuestions
 {
     margin-right: 10%;
     margin-left: 10%;
-}
+} */
 h2
 {
     text-align: center;
@@ -111,3 +104,48 @@ h2
     /* display: none; */
   }
 
+  .card-body
+  {
+    text-align: center;
+    justify-content: center;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+
+  .card-body img
+  {
+    width:100%; 
+    height:100%;
+    max-width: 500px;
+    object-fit: fill;
+  }
+
+  .questionBlock
+  {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+  }
+
+
+  #contentWrapper
+  {
+    min-height: 80vh;
+    margin-left:10%;
+    margin-right:10%;
+  }
+
+  .text
+  {
+    text-align: center;
+    justify-content: center;
+  }
+
+  .linkListDiv
+  {
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    padding-bottom: 20px;
+    
+  }

@@ -1,0 +1,17 @@
+{
+
+    
+    "section":
+    {
+        "title": "Beginner's Guide",
+        "questions": [
+            {"question" : "How does the event work?", "answer": "<p>Players 'attack' people of the opposing team by making art of original characters you choose belonging to members of the other team. You are free to use almost any visual art form! (See Attack Rules section of the rules<p><img src='./images/About.gif' height='200px'><br><p>Players 'attack' people of the opposing team by making art of original characters you choose belonging to members of the other team. You are free to use almost any visual art form! (See Attack Rules section of the rules).<p><img src='./images/About_2.gif' height='200px'></p><p>Your team receives points based on what you create for the other team with each attack.</p><p>The artist that receives the attack can then counter that attack by drawing the character belonging to the person who attacked them, or pay it forward by attacking a different person on the other team.</p><p><img src='./images/About_3.gif' height='200px'></p><p>♕ At the end of the month, the team with the greater score wins. ♕ <br>But remember, while there are point scores, the real goal is to celebrate characters with your fellow artists. <br>Art Fight is about giving and receiving amazing art. ♥</p>"},
+
+
+            {"question" : "Artfight terms explanation (attack, defense, revenge, ratio, etc.)", "answer": "<p><b>'Attacks'</b> are synonymous with art. An attack is an artwork created for someone on Art Fight.<br><b>'Defenses'</b> on peoples profiles are attacks that the person received.<br><b>'Revenges'</b> are attacks you make to someone who has previously attacked you.</b><br><b>'Battle Ratio'</b> is the amount of art received versus given. People with a higher battle ratio are more likely to be a target to the other team, as they are a bigger threat.<p>"}
+        ]
+    }
+        
+
+
+}

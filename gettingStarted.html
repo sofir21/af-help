@@ -7,6 +7,7 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="./styles/main.css">
+        <script type="module" src="./js/gettingStarted.js"></script>
         <!-- bootstrap -->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -14,17 +15,18 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     </head>
 <body>
+    
     <!-- navbar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">
-            <img src="./images/logo.png" width="30" height="30" alt="artfight logo">
+        <a class="navbar-brand" href="./index.html">
+            <img src="/images/AF_Logo.png" width="30" height="35" alt="artfight logo">
             Artfight Help</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav">
-            <a class="nav-item nav-link" href="/index.html">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-item nav-link active" href="./index.html">Home <span class="sr-only">(current)</span></a>
             <a class="nav-item nav-link" href="https://artfight.net/">Website</a>
           </div>
         </div>
@@ -34,162 +36,41 @@
     <div class="jumbotron jumbotron-fluid">
         <div class="top">
             <div class="top-text">
-                <img src="./images/logo.png">
+                <img src="./images/logo.png" alt="Logo">
                 <h1>Getting Started</h1>
-                <p id="subtitle">Information to help you understand how the event works!</p>
+                <p id="subtitle">Information to help you understand how the event works!
+                    <br>
+                    Click on the buttons bellow to navigate our question categories:
+                  </p>
+                  <div id="navButtonsFaq"></div>
             </div> 
         </div>
       </div>
     <!-- top end -->
 
-    <div class="displayQuestions">
-        <div id="accordion">
-            <!-- about artfight -->
-            <div class="questions">
-                <div class="card">
-                    <div class="card-header" id="headingOne">
-                      <h5 class="mb-0">
-                        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                          About Artfight
-                        </button>
-                      </h5>
-                    </div>
-                
-                    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
-                      <div class="card-body">
-                        
-                        <ul>
-                            <li><a href="#">What is Art Fight?</a></li>
 
-                        </ul>
-                        
-                      </div>
-                    </div>
-                  </div>
-            </div>
-            <!-- about artfight end -->
-            
-            <!-- about the event -->
-            <div class="questions">
-                <div class="card">
-                    <div class="card-header" id="headingTwo">
-                      <h5 class="mb-0">
-                        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
-                          About The Event
-                        </button>
-                      </h5>
-                    </div>
-                
-                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
-                      <div class="card-body">
-                        
-                        <ul>
-                            <li><a href="#">Creating an account</a></li>
-                            <li><a href="#">Joining a team.</a></li>
-                            <li><a href="#">Switching Teams.</a></li>
-                            <li><a href="#">What is an attack/defense/revenge/mass attack/revenge chain ?</a></li>
-                            <li><a href="#">How do I submit a character?</a></li>
-                            <li><a href="#">How do I attack?</a></li>
-                            <li><a href="#">How do I find targets?</a></li>
-                            <li><a href="#">Attack ratings.</a></li>
-                            <li><a href="#">Filter ratings.</a></li>
-                            <li><a href="#">Official assets & team cards.</a></li>
-                        </ul>
-                        
-                      </div>
-                    </div>
-                  </div>
-            </div>
-            <!-- about the event end -->
+    <!-- content -->
+    <div id="contentWrapper">
+        <div class="text">
+            <h2>What is artfight?</h2>
+            <p>Art Fight is an annual art game that lasts for 1 month, beginning every July. During the event users can register on the site to join in. Each year, participants are split into two themed teams to which they are assigned randomly.</p>
 
-            <!-- about the site -->
-            <div class="questions">
-                <div class="card">
-                    <div class="card-header" id="headingTwo">
-                      <h5 class="mb-0">
-                        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
-                          About The Website
-                        </button>
-                      </h5>
-                    </div>
-                
-                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
-                      <div class="card-body">
-                        
-                        <ul>
-                            <li><a href="#">Joining a team.</a></li>
-                            <li><a href="#">Finding followed users.</a></li>
-                            <li><a href="#">Searching characters/users/</a></li>
-                            <li><a href="#">Replying to comments.</a></li>
-                            <li><a href="#">Images in profile bios.</a></li>
-                            <li><a href="#">Unknown artist/ designer.</a></li>
-                            <li><a href="#">Canon/AU characters.</a></li>
-                        </ul>
-                        
-                      </div>
-                    </div>
-                  </div>
-            </div>
-            <!-- about the site -->
+            <a href="https://artfight.net/"><img src="./images/Join_The_Fight.gif" alt="Join the Fight" width="250"></a>
 
-            <!-- about the Discord -->
-            <div class="questions">
-                <div class="card">
-                    <div class="card-header" id="headingTwo">
-                      <h5 class="mb-0">
-                        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
-                          About The Discord
-                        </button>
-                      </h5>
-                    </div>
-                
-                    <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
-                      <div class="card-body">
-                        
-                        <ul>
-                            <li><a href="#">Can't see channels/type in introductions.</a></li>
-                            <li><a href="#">Can't see target hunting/advertisements.</a></li>
-                            <li><a href="#">Contributor role.</a></li>
-                            <li><a href="#">Team role / color.</a></li>
-                        </ul>
-                        
-                      </div>
-                    </div>
-                  </div>
-            </div>
-            <!-- about the discord -->
-
-            <!-- common errors -->
-            <div class="questions">
-                <div class="card">
-                    <div class="card-header" id="headingTwo">
-                      <h5 class="mb-0">
-                        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
-                          Common Errors
-                        </button>
-                      </h5>
-                    </div>
-                
-                    <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
-                      <div class="card-body">
-                        
-                        <ul>
-                            <li><a href="#">Can't see channels/type in introductions.</a></li>
-                            <li><a href="#">Can't see target hunting/advertisements.</a></li>
-                            <li><a href="#">Contributor role.</a></li>
-                        </ul>
-                        
-                      </div>
-                    </div>
-                  </div>
-            </div>
-            <!-- about the site -->
-            
         </div>
+        
+
+        <div class="displayQuestions">
+            <div id="accordion">
+                <div class="jsonContent"></div>
+            </div>
+
+        </div>
+    </div>
+    <!-- content end -->
+
+   
     
-
-
-        <!-- <li><a href="#"></a></li> -->
 
 </body>
 </html>
