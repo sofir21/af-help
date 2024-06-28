@@ -1,0 +1,24 @@
+{
+
+    
+    "section":
+    {
+        "title": "Event Questions",
+        "questions": [
+            {"question" : "question 1", "answer": "<p>answer 1<p>"},
+            {"question" : "question 2", "answer": "<p>answer 2<p> <img src='https://file.garden/ZjiUSDZDmwekrzbA/TH-Icon.PNG'>"},
+            {"question" : "question 3", "answer": "<p> answer 3<br><br> answer 3 with a paragraph break!</p>"}
+        ]
+    },
+        
+    "section2":
+        {
+            "title": "Website Questions",
+            "questions": [
+                {"question" : "question 1", "answer": "answer 1"},
+                {"question" : "question 2", "answer": "answer 2"},
+                {"question" : "question 3", "answer": "answer 3"}
+            ]
+        }
+
+}

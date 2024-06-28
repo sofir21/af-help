@@ -1,0 +1,5 @@
+make a json that has all questions
+-  parse through searchbar contents and link users to relevant questions in faq
+
+move read json from faq.js into utils and make it load on main!!!!
+- import json from main
