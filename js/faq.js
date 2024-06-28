@@ -99,4 +99,3 @@ const jsonLoaded = json =>
 
 
 
-console.log("check");

@@ -98,3 +98,16 @@ h2
     margin-left: 5px;
 }
 
+#btn-back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 0px;
+    height: 40px;
+    width: 40px;
+    justify-content: center;
+    align-items: center;
+    font-size: large;
+    
+    /* display: none; */
+  }
+
