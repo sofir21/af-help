@@ -7,7 +7,6 @@ var searchResults = 0;
 const jsonLoaded = json =>
     {
 
-        console.log("search clicked");
 
         var result = [];
 
@@ -32,8 +31,6 @@ const jsonLoaded = json =>
             searchHTML += `<br><p class="font-weight-light">Here are the search results for: <b>'${search}'</b></p>`;
 
             searchHTML += `<div id="resultsQuestions">`;
-            // searchHTML += `<br><br> <p> dsajfhkj dskajhfkjsahfd kjdhfakjdh kjfdsahkjdsah <br> jhfdsajdhfa kjdhfajhf ajdfhakjadshf adsfjkl 
-            // <br><br> ajdhfkjdsahfaksjf <br> jakdshfaskjdsafh jdskhfjdsa asjdhfakjsdfh dsajfhakjsh</p>`;
             searchHTML += `<div id="accordion">`;
 
             for (var i = 0; i < result.length; i++) 
@@ -80,22 +77,25 @@ const jsonLoaded = json =>
                     
                 }
             }
-            // searchHTML += `</div></div>`;
+
+        searchHTML += `
+        </div>
+        </div>`;
         }
 
         if(searchResults == 0)
         {
-                searchHTML = `<p>No results found.<br>Please make sure to only search for key terms.<br> For example, instead of searching "How do I join a team?" search for: "join" or "team".</p>`;
+                searchHTML = "";
+                
+                searchHTML += `<p class="font-weight-light">No results found for: <b>'${search}'</b></p>`;
+                searchHTML += `<div id="resultsQuestions">`;
+                searchHTML +=`<p class="font-weight-light"><br>Please make sure to only search for key terms.<br> For example, instead of searching "How do I join a team?" search for: "join" or "team".</p>`;
+                searchHTML += `</div>`;
+
         }
-        searchHTML += `
-        </div>
-        </div>
-        </div>`
-          
 
-            console.log()
-
-            document.querySelector("#searchResults").innerHTML = searchHTML;  
+        searchHTML += `</div>`
+        document.querySelector("#searchResults").innerHTML = searchHTML;  
     }
 
 
