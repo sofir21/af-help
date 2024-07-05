@@ -1,14 +1,14 @@
 var searchHTML = "";
 var aboveSearchHTML = "";
-var bellowSearchHTML = "";
-var jsonFile;
-var idNumber = 0;
-var search = "";
-var searchResults = 0;
+var bellowSearchHTML = ""; 
+var idNumber = 0; // used to create different ids for each question that is added to the html of the page
+var search = ""; //used to save user's text input
+var searchResults = 0; //used to keep track and display how many matches were found to the user text input
 
+
+// once json is loaded, searches through faq for matching words that the user typed into the text input
 const jsonLoaded = json =>
     {
-
 
         var result = [];
 
@@ -22,35 +22,42 @@ const jsonLoaded = json =>
         searchResults = 0; //clears search results
         search = document.querySelector("#searchText").value; //gets searchbar text
 
-        if(search == "" || search == null)
+        // checks user put something into the text input
+        if(search == "" || search == null) // if empty
         {
             searchHTML += "<p>Please search a valid term.</p>"
-            
         }
         else
         {
+            // sets up stuff that goes above the search results
             aboveSearchHTML = "";
             aboveSearchHTML += `<div id="results">`;
             aboveSearchHTML += `<p class="font-weight-light">Here are the search results for: <b>'${search}'</b></p>`;
 
+            // sets up divs for search results
             searchHTML += `<div id="resultsQuestions">`;
             searchHTML += `<div id="accordion">`;
 
+
+            // loops through sections in json
             for (var i = 0; i < result.length; i++) 
             {
             
-                idNumber +=1;
+                idNumber +=1; 
                 
     
+                //creates id for title of questons (this was usefd for faq)
                 var createID = `${result[i].title}`;
                 var newID = createID.split(" ").join("");
                 console.log(newID);
     
     
-                
+                //loops through each question & answer in current section of the json
                 for (var j = 0; j < result[i].questions.length; j++) {
                     idNumber +=1;
 
+                    //checks if question/answer includes the text input the user is looking for
+                    //if true, it adds it to the html displayed
                     if(result[i].questions[j].question.includes(search) || result[i].questions[j].answer.includes(search))
                     {
                         searchHTML += 
@@ -74,20 +81,19 @@ const jsonLoaded = json =>
                         </div>
                         `
                         ;
-                        searchResults +=1;
+                        searchResults +=1; 
 
                     }
                     
                 }
             }
 
-        searchHTML += `
-        
-        </div>`;
+        searchHTML += `</div>`;
+
         }
 
         
-
+        // displays text if there is no search results found
         if(searchResults == 0)
         {
                 searchHTML = "";
@@ -103,6 +109,7 @@ const jsonLoaded = json =>
 
         }
         
+        //if there is at least one search result, it will display how many matches there was to the user.
         if(searchResults != 0)
         {
             aboveSearchHTML += `<p class="font-weight-light">Showing <b>'${searchResults}'</b> results.</p> </div>`;
@@ -110,6 +117,8 @@ const jsonLoaded = json =>
 
         bellowSearchHTML += `</div>`;
 
+
+        //adds all generated html to the page
         document.querySelector("#searchResults").innerHTML = aboveSearchHTML;  
         document.querySelector("#searchResults").innerHTML += searchHTML;  
         document.querySelector("#searchResults").innerHTML += bellowSearchHTML;  

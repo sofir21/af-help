@@ -2,8 +2,6 @@ import * as utils from './utils.js';
 import * as search from './searchResults.js';
 
 
-var searchInput;
-
 window.onload = ()=>{
 	init();
 }
@@ -11,15 +9,13 @@ window.onload = ()=>{
 const init = () =>
     {
         
-
+        //sets up on click function for search button
         document.querySelector("#searchButton").onclick = searchButtonClicked;
+        //clicks search button when user presses 'enter'
         document.getElementById("searchText").addEventListener('keyup', function(event) { 
-            // If the user presses the "Enter" key on the keyboard
             if (event.key === "Enter") {
                 console.log("clicked");
-              // Cancel the default action, if needed
               event.preventDefault();
-              // Trigger the button element with a click
               document.getElementById("searchButton").click();
             }
           });
@@ -28,7 +24,7 @@ const init = () =>
   
 
 
-
+//loads json when user clicks search
 const searchButtonClicked = () =>
 {
     utils.loadFile('./json/faq.json', search.jsonLoaded);

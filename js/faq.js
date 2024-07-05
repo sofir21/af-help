@@ -7,6 +7,5 @@ window.onload = ()=>{
 
 const init = () =>
     {
-        utils.loadFile('./json/faq.json',questions.jsonLoaded);
-        console.log("hi");
+        utils.loadFile('./json/faq.json',questions.jsonLoaded); //loads faq json to the faq page
     }
