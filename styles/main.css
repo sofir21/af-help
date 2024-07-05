@@ -149,3 +149,24 @@ h2
     padding-bottom: 20px;
     
   }
+
+  /* search results */
+  #results
+  {
+    margin: 5px;
+    
+    /* background-color: white; */
+  }
+
+  #resultsQuestions
+  {
+    max-height: 200px;
+    font-size: 12px !important;
+    border:1px black solid;
+    background-color: white;
+    overflow-y: auto;
+  }
+
+  .card-header{
+    /* font-size: 10px !important; */
+  }

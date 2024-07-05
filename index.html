@@ -8,7 +8,7 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="./styles/main.css">
-        <!-- <script type="module" src="./js/main.js"></script> -->
+        <script type="module" src="./js/search.js"></script>
         <!-- bootstrap -->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -38,13 +38,16 @@
               <div class="top-text">
                 <img src="./images/AF_Logo.png" alt="Art Fight Logo" height="150">
                   <h1>Welcome to Artfight Help</h1>
-                  <p id="subtitle">Search (doesn't work yet)</p>
+                  <p id="subtitle" class="font-weight-light">Search through our FAQ.</p>
               </div>
               
               <div class="search">
-                  <input type="text" placeholder="Search...">
-                  <input class="btn btn-primary btn-sm" type="submit" value="Submit">
+                  <input id= "searchText" type="text" placeholder="Search...">
+                  <input id="searchButton" class="btn btn-primary btn-sm" type="submit" value="Submit">
               </div>  
+              <div id="searchResults">
+
+              </div>
           </div>
         </div>
 
