@@ -36,7 +36,8 @@ const jsonLoaded = json =>
             // <br><br> ajdhfkjdsahfaksjf <br> jakdshfaskjdsafh jdskhfjdsa asjdhfakjsdfh dsajfhakjsh</p>`;
             searchHTML += `<div id="accordion">`;
 
-            for (var i = 0; i < result.length; i++) {
+            for (var i = 0; i < result.length; i++) 
+            {
             
                 idNumber +=1;
                 
@@ -78,16 +79,13 @@ const jsonLoaded = json =>
                     }
                     
                 }
-
-            if(searchResults == 0)
-            {
-                searchHTML = `<p>No results found.</p>`;
-            }
-    
-               
-                // console.log(result[i]);
             }
             // searchHTML += `</div></div>`;
+        }
+
+        if(searchResults == 0)
+        {
+                searchHTML = `<p>No results found.<br>Please make sure to only search for key terms.<br> For example, instead of searching "How do I join a team?" search for: "join" or "team".</p>`;
         }
         searchHTML += `
         </div>
@@ -95,18 +93,6 @@ const jsonLoaded = json =>
         </div>`
           
 
-
-
-
-
-
-        
-
-    
-
-
-        
-           
             console.log()
 
             document.querySelector("#searchResults").innerHTML = searchHTML;  
