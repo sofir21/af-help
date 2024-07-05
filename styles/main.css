@@ -150,6 +150,11 @@ h2
     
   }
 
+  #results
+  {
+    margin: 0px;
+  }
+
   /* search results */
   #searchResults
   {
@@ -160,6 +165,9 @@ h2
 
   #resultsQuestions
   {
+    margin-left: 10%;
+    margin-right:10%;
+    padding: 5px;
     max-height: 200px;
     border:1px black solid;
     background-color: white;

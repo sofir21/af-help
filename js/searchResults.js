@@ -1,4 +1,6 @@
 var searchHTML = "";
+var aboveSearchHTML = "";
+var bellowSearchHTML = "";
 var jsonFile;
 var idNumber = 0;
 var search = "";
@@ -27,8 +29,9 @@ const jsonLoaded = json =>
         }
         else
         {
-            searchHTML += `<div id="results">`;
-            searchHTML += `<br><p class="font-weight-light">Here are the search results for: <b>'${search}'</b></p>`;
+            aboveSearchHTML = "";
+            aboveSearchHTML += `<div id="results">`;
+            aboveSearchHTML += `<p class="font-weight-light">Here are the search results for: <b>'${search}'</b></p>`;
 
             searchHTML += `<div id="resultsQuestions">`;
             searchHTML += `<div id="accordion">`;
@@ -79,23 +82,38 @@ const jsonLoaded = json =>
             }
 
         searchHTML += `
-        </div>
+        
         </div>`;
         }
+
+        
 
         if(searchResults == 0)
         {
                 searchHTML = "";
+                bellowSearchHTML ="";
+                aboveSearchHTML = "";
                 
-                searchHTML += `<p class="font-weight-light">No results found for: <b>'${search}'</b></p>`;
+                searchHTML += `<div id="results">`;
+                searchHTML += `<p class="font-weight-light">No results found for: <b>'${search}'</b></p></div>`;
+
                 searchHTML += `<div id="resultsQuestions">`;
-                searchHTML +=`<p class="font-weight-light"><br>Please make sure to only search for key terms.<br> For example, instead of searching "How do I join a team?" search for: "join" or "team".</p>`;
+                searchHTML +=`<p class="font-weight-light"><br>Please make sure to only search for key terms.<br> For example, instead of searching "How do I join a team?" search for: "join" or "team".<br><br>If you've tried searching by terms multiple times and still can't find anything regarding your question, please <a href="https://artfight.net/info/contact-us">contact a moderator.</a></p>`;
                 searchHTML += `</div>`;
 
         }
+        
+        if(searchResults != 0)
+        {
+            aboveSearchHTML += `<p class="font-weight-light">Showing <b>'${searchResults}'</b> results.</p> </div>`;
+        }
 
-        searchHTML += `</div>`
-        document.querySelector("#searchResults").innerHTML = searchHTML;  
+        bellowSearchHTML += `</div>`;
+
+        document.querySelector("#searchResults").innerHTML = aboveSearchHTML;  
+        document.querySelector("#searchResults").innerHTML += searchHTML;  
+        document.querySelector("#searchResults").innerHTML += bellowSearchHTML;  
+
     }
 
 
