@@ -83,8 +83,7 @@ const jsonLoaded = json =>
                         ;
                         searchResults +=1; 
 
-                    }
-                    
+                    } 
                 }
             }
 
